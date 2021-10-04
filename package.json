@@ -1,0 +1,54 @@
+{
+	"name": "svelte-themable-ui",
+	"version": "1.0.0-beta.0",
+	"description": "A set of themable UI elements",
+	"author": "Jerry Thomas <me@jerrythomas.name>",
+	"license": "MIT",
+	"svelte": "src/index.js",
+	"module": "src/index.js",
+	"main": "src/index.js",
+	"types": "dist/index.d.ts",
+	"type": "module",
+	"scripts": {
+		"build": "tsc",
+		"prepublishOnly": "npm run build",
+		"lint": "eslint src spec",
+		"test": "pnpm lint:fix && uvu -i fixtures spec",
+		"release": "release-it --preRelease=beta",
+		"coverage": "c8 --include src --all pnpm test"
+	},
+	"exports": {
+		"./package.json": "./package.json",
+		".": "./src/index.js",
+		"./outline": "./src/icon/outline/index.js",
+		"./filled": "./src/icon/filled/index.js",
+		"./theme.css": "./src/theme.css"
+	},
+	"devDependencies": {
+		"@tailwindcss/aspect-ratio": "^0.2.2",
+		"@tailwindcss/line-clamp": "^0.2.2",
+		"c8": "^7.9.0",
+		"eslint": "^7.32.0",
+		"eslint-config-prettier": "^8.3.0",
+		"github-markdown-css": "^4.0.0",
+		"jsdom": "^17.0.0",
+		"marked": "^3.0.4",
+		"md5": "^2.3.0",
+		"prettier": "^2.4.1",
+		"prismjs": "^1.25.0",
+		"release-it": "^14.11.6",
+		"svelte": "^3.43.0",
+		"tailwindcss": "^2.2.16",
+		"typescript": "^4.4.3",
+		"uvu": "^0.5.1"
+	},
+	"keywords": [
+		"svelte",
+		"icon",
+		"heroicons"
+	],
+	"files": [
+		"src",
+		"dist"
+	]
+}

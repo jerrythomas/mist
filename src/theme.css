@@ -1,0 +1,95 @@
+body {
+	@apply text-skin-base bg-skin-base;
+}
+button {
+	@apply bg-primary-200 text-gray-600 rounded-md;
+}
+button[role='switch'] {
+	@apply bg-gradient-to-r from-primary-700  bg-secondary-700;
+	/* @apply focus-visible:ring-white; */
+}
+button[role='switch'][aria-checked='true'] {
+	@apply bg-gradient-to-r from-primary-500  bg-secondary-500;
+}
+
+button[role='switch'] mark {
+	@apply bg-skin-base;
+}
+
+input {
+	@apply focus:outline-none focus:ring focus:border-secondary-400;
+}
+
+.sidebar {
+	@apply border-r border-skin-base;
+	@apply bg-texture;
+}
+
+.menu {
+	@apply border border-skin-base border-opacity-50;
+	@apply bg-opacity-90 bg-skin-muted;
+}
+
+.menu a {
+	@apply border-b last:border-b-0 border-skin-base;
+}
+
+.menu a:not(.isCurrent):hover {
+	@apply bg-skin-hover;
+}
+
+.isCurrent {
+	@apply bg-gradient-to-r from-primary-500 via-primary-500 bg-secondary-500 text-gray-50;
+}
+
+.avatar {
+	@apply rounded-full w-16 h-16 shadow-lg;
+}
+
+.user h1 {
+	@apply bg-gradient-to-r from-primary-500 via-primary-500 to-secondary-500 bg-clip-text text-xl text-transparent px-4 capitalize;
+}
+
+fill .isEmpty {
+	@apply bg-primary-300 text-gray-800;
+}
+fill .isFilled,
+.isInfo {
+	@apply bg-blue-200 text-blue-600;
+}
+
+/* fill code,
+fill pre {
+	background-color: var(--code-fill);
+} */
+.hasWarning,
+.isWarning {
+	@apply bg-yellow-200 text-yellow-600;
+}
+.hasPassed,
+.isSuccess {
+	@apply bg-green-200 text-green-600;
+}
+.hasError,
+.isError {
+	@apply bg-red-200 text-red-600;
+}
+
+pre,
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
+	@apply rounded-md shadow-md font-mono;
+}
+
+.markdown-body {
+	@apply bg-skin-base text-skin-base font-serif;
+}
+
+kbd,
+code,
+pre,
+.commit-tease-sha,
+.blob-num,
+.blob-code-inner {
+	@apply font-mono;
+}
