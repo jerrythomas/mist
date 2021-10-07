@@ -1,7 +1,7 @@
 export function pannable(node, { options, current }) {
 	let data = { options, current }
 
-	function toggle(event) {
+	function toggle() {
 		const previous = data.current
 		data.current = (data.current + 1) % data.options.length
 
