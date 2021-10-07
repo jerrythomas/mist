@@ -1,5 +1,29 @@
+<script context="module">
+	/**
+	 * @type {import('@sveltejs/kit').Load}
+	 */
+	export async function load({ page, fetch, session, stuff }) {
+		const response = await fetch('/api/fillable')
+		console.log(response)
+		if (response.ok) {
+			let result = await response.json()
+			console.log(result)
+			return {
+				props: { ...result.data }
+			}
+		}
+
+		return {
+			status: response.status,
+			error: new Error(`Could not load ${url}`)
+		}
+	}
+</script>
+
 <script>
-	import ShowFillable from '$lib/ShowFillable.svelte';
+	import ShowFillable from '$lib/ShowFillable.svelte'
+	export let options = []
+	export let text = ''
 	// // import Radio from '$lib/input/NewRadio.svelte'
 	// import { init } from 'svelte/internal';
 
@@ -26,7 +50,7 @@
 	// function handleChange(event) {}
 </script>
 
-<ShowFillable />
+<ShowFillable {text} {options} />
 <!-- <content class="p-8 w-1/3 space-y-4">
   <h1>Radio Group</h1>
   <group class="flex flex-col space-y-2">

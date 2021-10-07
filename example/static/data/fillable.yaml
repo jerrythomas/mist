@@ -1,0 +1,25 @@
+text: |
+  ### Heading
+  
+  Fill in the blanks ~?~ and ~?~
+  
+  * Bullet
+  * Points
+
+options: 
+  - value: one
+    expectedIndex: 0
+    actualIndex: -1
+    node: null
+  - value: 'two'
+    expectedIndex: 1
+    actualIndex: -1
+    node: null
+  - value: 'three'
+    expectedIndex: -1
+    actualIndex: -1
+    node: null
+  - value: 'four'
+    expectedIndex: -1
+    actualIndex: -1
+    node: null

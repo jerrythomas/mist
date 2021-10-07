@@ -60,19 +60,6 @@ const config = {
 					900: '#2F1A00'
 				},
 				secondary: colors.pink
-				// secondary: {
-				// 	DEFAULT: '#FA5C84',
-				// 	50: '##FDF2F8',
-				// 	100: '#FCE7F3',
-				// 	200: '#FBCFE8',
-				// 	300: '#FDBFCF',
-				// 	400: '#FC8DA9',
-				// 	500: '#FA5C84',
-				// 	600: '#F82B5F',
-				// 	700: '#E90740',
-				// 	800: '#B70633',
-				// 	900: '#860425'
-				// }
 			},
 			backgroundImage: (theme) => ({
 				texture: "url('/subtle-grey.png')"

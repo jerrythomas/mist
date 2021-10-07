@@ -9,6 +9,7 @@
 		"format": "prettier --write src spec"
 	},
 	"devDependencies": {
+		"@sveltejs/adapter-static": "^1.0.0-next.20",
 		"@sveltejs/kit": "next",
 		"autoprefixer": "^10.3.6",
 		"cssnano": "^5.0.8",
@@ -16,6 +17,7 @@
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^3.2.1",
 		"focus-visible": "^5.2.0",
+		"js-yaml": "^4.1.0",
 		"postcss": "^8.3.8",
 		"postcss-focus-visible": "^6.0.1",
 		"postcss-ignore-plugin": "^0.2.1",

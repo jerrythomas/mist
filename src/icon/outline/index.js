@@ -14,3 +14,7 @@ export { default as Categories } from './Categories.svelte'
 export { default as ChevronRight } from './ChevronRight.svelte'
 export { default as FingerPrint } from './FingerPrint.svelte'
 export { default as ColorSwatch } from './ColorSwatch.svelte'
+
+export { default as TrendingUp } from './TrendingUp.svelte'
+export { default as Dashboard } from './Dashboard.svelte'
+export { default as Filter } from './Filter.svelte'

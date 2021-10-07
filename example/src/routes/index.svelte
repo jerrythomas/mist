@@ -1,5 +1,5 @@
 <script>
-	import { Markdown } from 'svelte-themable-ui';
+	import { Markdown } from 'svelte-themable-ui/markdown';
 
 	let content = '# The Heading 1 \n\
 \n\
