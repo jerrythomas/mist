@@ -15,9 +15,7 @@ export async function get({ params }) {
 
 		if (data) {
 			return {
-				body: {
-					data
-				}
+				body: data
 			}
 		}
 	} catch (err) {

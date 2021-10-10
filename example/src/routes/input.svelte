@@ -4,12 +4,12 @@
 	 */
 	export async function load({ page, fetch, session, stuff }) {
 		const response = await fetch('/api/fillable')
-		console.log(response)
+
 		if (response.ok) {
 			let result = await response.json()
-			console.log(result)
+
 			return {
-				props: { ...result.data }
+				props: { ...result }
 			}
 		}
 

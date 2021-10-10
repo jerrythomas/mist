@@ -2,12 +2,47 @@ body {
 	@apply text-skin-base bg-skin-base;
 }
 button {
-	@apply bg-primary-200 text-gray-600 rounded-md;
+	@apply bg-skin-button text-skin-base rounded-md px-4 py-2;
 }
 button[role='switch'] {
-	@apply bg-gradient-to-r from-primary-700  bg-secondary-700;
+	@apply p-0 bg-gradient-to-r from-primary-700  bg-secondary-700;
 	/* @apply focus-visible:ring-white; */
 }
+
+.primary,
+.isPrimary {
+	@apply bg-gradient-to-br from-primary-500  bg-secondary-500;
+}
+
+.disabled,
+.isDisabled {
+	@apply cursor-not-allowed bg-gray-400 text-gray-500;
+}
+
+.warn,
+.hasWarning,
+.isWarning {
+	@apply bg-yellow-200 text-yellow-600;
+}
+
+.pass,
+.hasPassed,
+.isSuccess {
+	@apply bg-green-200 text-green-600;
+}
+
+.fail,
+.hasError,
+.isError {
+	@apply bg-red-200 text-red-600;
+}
+
+.info,
+.hasInfo,
+.isInfo {
+	@apply bg-blue-200 text-blue-600;
+}
+
 button[role='switch'][aria-checked='true'] {
 	@apply bg-gradient-to-r from-primary-500  bg-secondary-500;
 }
@@ -53,26 +88,9 @@ input {
 fill .isEmpty {
 	@apply bg-primary-300 text-gray-800;
 }
-fill .isFilled,
-.isInfo {
-	@apply bg-blue-200 text-blue-600;
-}
 
-/* fill code,
-fill pre {
-	background-color: var(--code-fill);
-} */
-.hasWarning,
-.isWarning {
-	@apply bg-yellow-200 text-yellow-600;
-}
-.hasPassed,
-.isSuccess {
-	@apply bg-green-200 text-green-600;
-}
-.hasError,
-.isError {
-	@apply bg-red-200 text-red-600;
+fill .isFilled {
+	@apply bg-blue-200 text-blue-600;
 }
 
 pre,
