@@ -26,7 +26,7 @@
 
 	marked.setOptions({
 		highlight: (code, lang) => {
-			if (prism.languages[lang]) {
+			if (prism && prism.languages[lang]) {
 				return prism.highlight(code, prism.languages[lang], lang)
 			} else {
 				return code

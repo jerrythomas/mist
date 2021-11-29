@@ -9,13 +9,15 @@
 
 <script>
 	import { onMount } from 'svelte'
-	import '../app.postcss'
+
+	import 'virtual:windi.css'
+	import '../app.css'
+	import 'svelte-themable-ui/theme.css'
 	import '@fontsource/montserrat-alternates'
 	import '@fontsource/montserrat-alternates/300.css'
 	import '@fontsource/montserrat-alternates/700.css'
 	import '@fontsource/kalam'
 	import '@fontsource/victor-mono'
-	import 'svelte-themable-ui/theme.css'
 
 	import { Sidebar, UserCard, gravatar, Switch } from 'svelte-themable-ui'
 	import { menu } from '$config'

@@ -9,6 +9,10 @@ button[role='switch'] {
 	/* @apply focus-visible:ring-white; */
 }
 
+.alert {
+	@apply py-2 px-4 rounded-sm my-2;
+}
+
 .primary,
 .isPrimary {
 	@apply bg-gradient-to-br from-primary-500  bg-secondary-500;
@@ -51,10 +55,13 @@ button[role='switch'] mark {
 	@apply bg-skin-base;
 }
 
-input {
-	@apply focus:outline-none focus:ring focus:border-secondary-400;
+input,
+textarea {
+	@apply border border-gray-300 focus:outline-none focus:ring-secondary focus:border-secondary-400 px-4 leading-loose;
 }
-
+input[type='number'] {
+	@apply p-0 pl-2;
+}
 .sidebar {
 	@apply border-r border-skin-base;
 	@apply bg-texture;
@@ -91,6 +98,9 @@ fill .isEmpty {
 
 fill .isFilled {
 	@apply bg-blue-200 text-blue-600;
+}
+.icon.isActive {
+	@apply text-primary-300;
 }
 
 pre,

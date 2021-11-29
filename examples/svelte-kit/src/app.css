@@ -1,6 +1,6 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 @layer base {
 	html,
@@ -10,6 +10,9 @@
 	}
 
 	:root {
+		--color-primary: 251, 140, 0;
+		--color-secondary: 236, 72, 153;
+
 		--color-text-base: 31, 41, 55;
 		--color-text-hover: 55, 65, 81;
 

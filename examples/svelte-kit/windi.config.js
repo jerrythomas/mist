@@ -1,17 +1,22 @@
-const colors = require('tailwindcss/colors');
-
+import { pink } from 'windicss/colors'
 function withOpacity(cssVariable) {
 	return ({ opacityValue }) => {
 		if (opacityValue !== undefined) {
-			return `rgba(var(${cssVariable}), ${opacityValue})`;
+			return `rgba(var(${cssVariable}), ${opacityValue})`
 		}
-		return `rgb(var(${cssVariable}))`;
-	};
+		return `rgb(var(${cssVariable}))`
+	}
 }
 const config = {
-	mode: 'aot',
-	purge: ['./src/**/*.{html,js,svelte,ts}'],
+	// mode: 'aot',
+	// purge: ['./src/**/*.{html,js,svelte,ts}'],
 	darkMode: 'media',
+	extract: {
+		include: [
+			'./**/*.{html,js,svelte,ts,css}',
+			'./node_modules/svelte-themable-ui/src/**/*.{html,js,svelte,ts,css}'
+		]
+	},
 	theme: {
 		fontFamily: {
 			mono: ['Victor-Mono', 'monospace'],
@@ -59,22 +64,26 @@ const config = {
 					800: '#623700',
 					900: '#2F1A00'
 				},
-				secondary: colors.pink
+				secondary: pink
 			},
 			backgroundImage: (theme) => ({
 				texture: "url('/subtle-grey.png')"
 			})
 		}
 	},
-	variants: {
-		extend: {
-			borderRadius: ['first', 'last'],
-			borderWidth: ['first', 'last'],
-			textDecoration: ['focus-visible']
-		}
-	},
+	// variants: {
+	// 	extend: {
+	// 		borderRadius: ['first', 'last'],
+	// 		borderWidth: ['first', 'last'],
+	// 		textDecoration: ['focus-visible']
+	// 	}
+	// },
 
-	plugins: [require('@tailwindcss/aspect-ratio'), require('@tailwindcss/line-clamp')]
-};
+	plugins: [
+		require('windicss/plugin/line-clamp'),
+		require('windicss/plugin/aspect-ratio')
+	]
+}
 
-module.exports = config;
+// export default config
+module.exports = config
