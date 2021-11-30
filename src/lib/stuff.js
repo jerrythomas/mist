@@ -1,5 +1,5 @@
 // import md5 from 'crypto-js/md5'
-import md5 from 'md5'
+import md5 from 'blueimp-md5'
 
 /**
  * Get the gravatar URL for an email
