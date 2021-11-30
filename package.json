@@ -1,6 +1,6 @@
 {
 	"name": "svelte-themable-ui",
-	"version": "1.0.0-beta.4",
+	"version": "1.0.0-beta.5",
 	"description": "A collection of themable UI components for use in svelte ",
 	"author": "Jerry Thomas <me@jerrythomas.name>",
 	"license": "MIT",
