@@ -4,13 +4,13 @@ specifiers:
   '@types/marked': ^3.0.2
   '@types/md5': ^2.3.1
   '@types/prismjs': ^1.16.6
+  blueimp-md5: ^2.19.0
   c8: ^7.10.0
   eslint: ^7.32.0
   eslint-config-prettier: ^8.3.0
   github-markdown-css: ^4.0.0
   jsdom: ^17.0.0
   marked: ^3.0.8
-  md5: ^2.3.0
   prettier: ^2.4.1
   prismjs: ^1.25.0
   release-it: ^14.11.6
@@ -23,13 +23,13 @@ devDependencies:
   '@types/marked': 3.0.2
   '@types/md5': 2.3.1
   '@types/prismjs': 1.16.6
+  blueimp-md5: 2.19.0
   c8: 7.10.0
   eslint: 7.32.0
   eslint-config-prettier: 8.3.0_eslint@7.32.0
   github-markdown-css: 4.0.0
   jsdom: 17.0.0
   marked: 3.0.8
-  md5: 2.3.0
   prettier: 2.4.1
   prismjs: 1.25.0
   release-it: 14.11.6
@@ -458,6 +458,10 @@ packages:
       readable-stream: 3.6.0
     dev: true
 
+  /blueimp-md5/2.19.0:
+    resolution: {integrity: sha512-DRQrD6gJyy8FbiE4s+bDoXS9hiW3Vbx5uCdwvcCf3zLHL+Iv7LtGHLpr+GZV8rHG8tK766FGYBwRbu8pELTt+w==}
+    dev: true
+
   /boxen/5.1.2:
     resolution: {integrity: sha512-9gYgQKXx+1nP8mP7CzFyaUARhg7D3n1dF/FnErWmu9l6JvGpNUN278h0aSb+QjoiKSWG+iZ3uHrcqk0qrY9RQQ==}
     engines: {node: '>=10'}
@@ -585,10 +589,6 @@ packages:
     resolution: {integrity: sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==}
     dev: true
 
-  /charenc/0.0.2:
-    resolution: {integrity: sha1-wKHS86cJLgN3S/qD8UwPxXkKhmc=}
-    dev: true
-
   /ci-info/2.0.0:
     resolution: {integrity: sha512-5tK7EtrZ0N+OLFMthtqOj4fI2Jeb88C4CAZPu25LDVUgXJ0A3Js4PMGqrn0JU1W0Mh1/Z8wZzYPxqUrXeBboCQ==}
     dev: true
@@ -706,10 +706,6 @@ packages:
       path-key: 3.1.1
       shebang-command: 2.0.0
       which: 2.0.2
-    dev: true
-
-  /crypt/0.0.2:
-    resolution: {integrity: sha1-iNf/fsDfuG9xPch7u0LQRNPmxBs=}
     dev: true
 
   /crypto-random-string/2.0.0:
@@ -1504,10 +1500,6 @@ packages:
     resolution: {integrity: sha1-d8mYQFJ6qOyxqLppe4BkWnqSap0=}
     dev: true
 
-  /is-buffer/1.1.6:
-    resolution: {integrity: sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==}
-    dev: true
-
   /is-ci/2.0.0:
     resolution: {integrity: sha512-YfJT7rkpQB0updsdHLGWrvhBJfcfzNNawYDNIyQXJz0IViGf75O8EBPKSdvw2rF+LGCsX4FZ8tcr3b19LcZq4w==}
     hasBin: true
@@ -1836,14 +1828,6 @@ packages:
     resolution: {integrity: sha512-0gVrAjo5m0VZSJb4rpL59K1unJAMb/hm8HRXqasD8VeC8m91ytDPMritgFSlKonfdt+rRYYpP/JfLxgIX8yoSw==}
     engines: {node: '>= 12'}
     hasBin: true
-    dev: true
-
-  /md5/2.3.0:
-    resolution: {integrity: sha512-T1GITYmFaKuO91vxyoQMFETst+O71VUPEU3ze5GNzDm0OWdP8v1ziTaAEPUr/3kLsY3Sftgz242A1SetQiDL7g==}
-    dependencies:
-      charenc: 0.0.2
-      crypt: 0.0.2
-      is-buffer: 1.1.6
     dev: true
 
   /merge-stream/2.0.0:
