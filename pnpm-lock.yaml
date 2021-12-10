@@ -2,9 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@types/marked': ^3.0.2
-  '@types/md5': ^2.3.1
   '@types/prismjs': ^1.16.6
-  blueimp-md5: ^2.19.0
   c8: ^7.10.0
   eslint: ^7.32.0
   eslint-config-prettier: ^8.3.0
@@ -21,9 +19,7 @@ specifiers:
 
 devDependencies:
   '@types/marked': 3.0.2
-  '@types/md5': 2.3.1
   '@types/prismjs': 1.16.6
-  blueimp-md5: 2.19.0
   c8: 7.10.0
   eslint: 7.32.0
   eslint-config-prettier: 8.3.0_eslint@7.32.0
@@ -288,12 +284,6 @@ packages:
     resolution: {integrity: sha512-mGYI9qFs+i5eYaytWKBbtEMbIkrXGKuhsDpDcj70ogKS2gk1NmgEy9Z3VEKz922Lfms6eITXXqv5idlX7C/irw==}
     dev: true
 
-  /@types/md5/2.3.1:
-    resolution: {integrity: sha512-OK3oe+ALIoPSo262lnhAYwpqFNXbiwH2a+0+Z5YBnkQEwWD8fk5+PIeRhYA48PzvX9I4SGNpWy+9bLj8qz92RQ==}
-    dependencies:
-      '@types/node': 16.11.6
-    dev: true
-
   /@types/node/16.11.6:
     resolution: {integrity: sha512-ua7PgUoeQFjmWPcoo9khiPum3Pd60k4/2ZGXt18sm2Slk0W0xZTqt5Y0Ny1NyBiN1EVQ/+FaF9NcY4Qe6rwk5w==}
     dev: true
@@ -456,10 +446,6 @@ packages:
       buffer: 5.7.1
       inherits: 2.0.4
       readable-stream: 3.6.0
-    dev: true
-
-  /blueimp-md5/2.19.0:
-    resolution: {integrity: sha512-DRQrD6gJyy8FbiE4s+bDoXS9hiW3Vbx5uCdwvcCf3zLHL+Iv7LtGHLpr+GZV8rHG8tK766FGYBwRbu8pELTt+w==}
     dev: true
 
   /boxen/5.1.2:

@@ -27,9 +27,7 @@
 	},
 	"devDependencies": {
 		"@types/marked": "^3.0.2",
-		"@types/md5": "^2.3.1",
 		"@types/prismjs": "^1.16.6",
-		"blueimp-md5": "^2.19.0",
 		"c8": "^7.10.0",
 		"eslint": "^7.32.0",
 		"eslint-config-prettier": "^8.3.0",

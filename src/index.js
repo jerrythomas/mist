@@ -14,5 +14,3 @@ export { default as OptionList } from './list/OptionList.svelte'
 export { default as Sidebar } from './pane/Sidebar.svelte'
 
 export { default as UserCard } from './card/User.svelte'
-
-export { gravatar } from './lib/stuff'
