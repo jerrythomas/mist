@@ -57,7 +57,7 @@ button[role='switch'] mark {
 
 input,
 textarea {
-	@apply border border-gray-300 focus:outline-none focus:ring-secondary focus:border-secondary-400 px-4 leading-loose;
+	@apply border border-gray-300 focus:outline-none focus:ring-secondary focus:border-secondary-400 px-2 leading-loose;
 }
 input[type='number'] {
 	@apply p-0 pl-2;
