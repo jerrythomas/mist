@@ -123,3 +123,8 @@ pre,
 .blob-code-inner {
 	@apply font-mono;
 }
+
+pill,
+.pill {
+	@apply leading-tight rounded-full px-3 py-1 uppercase text-xs;
+}
