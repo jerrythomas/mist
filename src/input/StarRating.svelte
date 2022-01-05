@@ -10,6 +10,7 @@
 	export let editable = true
 	export let fill = 'currentColor'
 	export let stroke = 'orange'
+	export let size = '1.5em'
 
 	function handleClick(index) {
 		if (editable) {
@@ -24,19 +25,15 @@
 </script>
 
 <input type="number" min="0" {max} hidden bind:value />
-<div class="flex flex-row text-pink-400" style="--stars: {max}">
+<div class="flex fit-content m-auto text-secondary-400">
 	{#each stars as selected, index}
 		<Icon
 			icon={StarIcon}
 			fill={selected ? fill : 'none'}
 			{stroke}
+			{size}
+			class=""
 			on:click={() => handleClick(index)}
 		/>
 	{/each}
 </div>
-
-<style>
-	div {
-		width: calc(var(--stars) * 1.5em);
-	}
-</style>
