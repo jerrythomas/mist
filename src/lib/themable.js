@@ -13,7 +13,7 @@ export function themable(node, { options, current }) {
 
 	return {
 		destroy() {
-			node.removeEventListener('mousedown', toggle)
+			node.removeEventListener('change', toggle)
 		}
 	}
 }

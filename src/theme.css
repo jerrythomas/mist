@@ -2,7 +2,7 @@ body {
 	@apply text-skin-contrast bg-skin-base;
 }
 button {
-	@apply bg-skin-200 text-black rounded-md px-4 py-2;
+	@apply bg-skin-200 text-skin-900 rounded-md px-4 py-2;
 }
 button[role='switch'] {
 	@apply bg-gradient-to-r from-primary-700  bg-secondary-700 border-2 border-skin-base;
@@ -131,5 +131,33 @@ pre,
 
 pill,
 .pill {
-	@apply leading-tight rounded-full px-3 py-1 uppercase text-xs;
+	@apply flex justify-center items-center leading-loose rounded-full px-4 select-none gap-1 content-fit;
+}
+
+pill,
+.pill {
+	@apply bg-skin-200 text-black;
+}
+
+pill svg,
+.pill svg {
+	@apply text-skin-700;
+}
+
+pill:hover svg,
+.pill:hover svg {
+	@apply text-white;
+}
+
+pill:hover,
+.pill:hover {
+	@apply bg-gradient-to-r from-primary-500 to-secondary-500 text-white;
+}
+
+list {
+	@apply shadow;
+}
+item:hover,
+.list-item:hover {
+	@apply bg-gradient-to-r from-primary-100 to-secondary-100 text-black;
 }
