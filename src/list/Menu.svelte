@@ -16,11 +16,11 @@
 
 <style lang="postcss">
 	.menu {
-		@apply select-none flex flex-col rounded-xl overflow-y-visible;
+		@apply select-none flex flex-col rounded-lg overflow-y-visible;
 	}
 	.menu a {
 		@apply flex flex-row w-full items-center px-4 py-3;
-		@apply first:rounded-t-xl last:rounded-b-xl;
+		@apply first:rounded-t-lg last:rounded-b-lg;
 	}
 	.menu p {
 		@apply px-4 flex flex-grow;

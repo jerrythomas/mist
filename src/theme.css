@@ -68,7 +68,7 @@ input[type='number'] {
 	@apply text-right;
 }
 .sidebar {
-	@apply border-r border-skin-200;
+	@apply border-r border-skin-200 bg-skin-50;
 	@apply bg-texture;
 }
 
