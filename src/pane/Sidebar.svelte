@@ -28,7 +28,7 @@
 <style lang="postcss">
 	aside {
 		z-index: 1;
-		@apply flex flex-col gap-4 w-80 p-4;
+		@apply flex flex-col;
 		@apply transition duration-200 ease-in-out;
 	}
 </style>
