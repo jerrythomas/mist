@@ -1,4 +1,6 @@
-# svelte-themable-ui
+# Mist
+
+![Mist](mist.svg)
 
 A set of themable UI elements.
 
