@@ -1,6 +1,18 @@
-# Mist
+# Sparsh
 
-A set of themable UI elements.
+![Sparsh](src/sparsh.svg)
+
+A set of composable, data driven and themable UI components.
+
+## Features
+
+[x] Data driven
+[x] Actions
+[x] Utility functions
+[x] Themable
+[ ] Responsive
+[ ] Accessible
+[ ] Keyboard
 
 ## Usage
 

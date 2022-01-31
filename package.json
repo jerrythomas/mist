@@ -48,11 +48,17 @@
 	},
 	"keywords": [
 		"svelte",
-		"icon",
-		"heroicons"
+		"sparsh",
+		"headless",
+		"themable",
+		"composable",
+		"data driven"
 	],
 	"files": [
 		"src",
 		"dist"
-	]
+	],
+  "publishConfig": {
+    "access": "public"
+  }
 }
