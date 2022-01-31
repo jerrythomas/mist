@@ -25,7 +25,9 @@
 </script>
 
 <input type="number" min="0" {max} hidden bind:value />
-<div class="flex fit-content m-auto text-secondary-400">
+<div
+	class="flex flex-shrink-0 flex-grow-0 fit-content m-auto text-secondary-400"
+>
 	{#each stars as selected, index}
 		<Icon
 			icon={StarIcon}

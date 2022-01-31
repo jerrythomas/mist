@@ -16,3 +16,6 @@ export { default as List } from './list/List.svelte'
 export { default as Sidebar } from './pane/Sidebar.svelte'
 
 export { default as UserCard } from './card/User.svelte'
+
+export { default as Markdown } from './markdown/Markdown.svelte'
+export { default as Fillable } from './markdown/Fillable.svelte'

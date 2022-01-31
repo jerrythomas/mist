@@ -1,4 +1,4 @@
-# svelte-themable-ui
+# Mist
 
 A set of themable UI elements.
 
@@ -13,8 +13,14 @@ Refer to the [example](example) for examples of all available UI elements.
 ## Quickstart
 
 ```bash
-degit jerrythomas/svelte-themable-ui/example my-app
+degit jerrythomas/mist/example my-app
 cd my-app
 npm i --save-dev svelte-themable-ui@beta
 npm run dev
 ```
+
+## Components
+
+[x] [Data Driven Lists](docs/lists.md)
+[x] [Layout](docs/layout.md)
+[x] [Markdown](docs/markdown.md)

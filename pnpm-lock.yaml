@@ -4,13 +4,16 @@ specifiers:
   '@types/marked': ^3.0.2
   '@types/prismjs': ^1.16.6
   c8: ^7.10.0
+  d3-collection: ^1.0.7
   eslint: ^7.32.0
   eslint-config-prettier: ^8.3.0
   github-markdown-css: ^4.0.0
+  js-yaml: ^4.1.0
   jsdom: ^17.0.0
   marked: ^3.0.8
   prettier: ^2.4.1
   prismjs: ^1.25.0
+  ramda: ^0.28.0
   release-it: ^14.11.6
   svelte: ^3.44.1
   typescript: ^4.4.4
@@ -21,13 +24,16 @@ devDependencies:
   '@types/marked': 3.0.2
   '@types/prismjs': 1.16.6
   c8: 7.10.0
+  d3-collection: 1.0.7
   eslint: 7.32.0
   eslint-config-prettier: 8.3.0_eslint@7.32.0
   github-markdown-css: 4.0.0
+  js-yaml: 4.1.0
   jsdom: 17.0.0
   marked: 3.0.8
   prettier: 2.4.1
   prismjs: 1.25.0
+  ramda: 0.28.0
   release-it: 14.11.6
   svelte: 3.44.1
   typescript: 4.4.4
@@ -408,6 +414,10 @@ packages:
       sprintf-js: 1.0.3
     dev: true
 
+  /argparse/2.0.1:
+    resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
+    dev: true
+
   /array-union/2.1.0:
     resolution: {integrity: sha512-HGyxoOTYUyCM6stUe6EJgnd4EoewAI7zMdfqO+kGjnlZmBDz/cR5pf8r/cR4Wq60sL/p0IkcjUEEPwS3GFrIyw==}
     engines: {node: '>=8'}
@@ -712,6 +722,10 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       cssom: 0.3.8
+    dev: true
+
+  /d3-collection/1.0.7:
+    resolution: {integrity: sha512-ii0/r5f4sjKNTfh84Di+DpztYwqKhEyUlKoPrzUFfeSkWxjW49xU2QzO9qrPrNkpdI0XJkfzvmTu8V2Zylln6A==}
     dev: true
 
   /data-urls/3.0.1:
@@ -1640,6 +1654,13 @@ packages:
       esprima: 4.0.1
     dev: true
 
+  /js-yaml/4.1.0:
+    resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
+    hasBin: true
+    dependencies:
+      argparse: 2.0.1
+    dev: true
+
   /jsdom/17.0.0:
     resolution: {integrity: sha512-MUq4XdqwtNurZDVeKScENMPHnkgmdIvMzZ1r1NSwHkDuaqI6BouPjr+17COo4/19oLNnmdpFDPOHVpgIZmZ+VA==}
     engines: {node: '>=12'}
@@ -2194,6 +2215,10 @@ packages:
   /quick-lru/5.1.1:
     resolution: {integrity: sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==}
     engines: {node: '>=10'}
+    dev: true
+
+  /ramda/0.28.0:
+    resolution: {integrity: sha512-9QnLuG/kPVgWvMQ4aODhsBUFKOUmnbUnsSXACv+NCQZcHbeb+v8Lodp8OVxtRULN1/xOyYLLaL6npE6dMq5QTA==}
     dev: true
 
   /rc/1.2.8:

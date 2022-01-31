@@ -65,7 +65,7 @@ input[type='search'] {
 	@apply rounded-full px-3;
 }
 input[type='number'] {
-	@apply text-right;
+	@apply text-right pr-2;
 }
 .sidebar {
 	@apply border-r border-skin-200 bg-skin-50;
