@@ -1,5 +1,5 @@
 <script>
-	import marked from 'marked'
+	import { marked } from 'marked'
 	import prism from 'prismjs'
 
 	import 'prismjs/components/prism-c.js'
